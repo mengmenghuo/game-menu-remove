@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "game-menu-remove",
+	"version": "${version}",
+	"name": "Game Menu Remove",
+	"description": "A client-side Fabric mod that removes the \"Report Bugs\" and \"Give Feedback\" buttons from the pause menu.",
+	"authors": [
+		"mmh1146"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/game-menu-remove/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mmh1146.menuremove.GameMenuRemove"
+		],
+		"client": [
+			"com.mmh1146.menuremove.client.GameMenuRemoveClient"
+		]
+	},
+	"mixins": [
+		"game-menu-remove.mixins.json",
+		{
+			"config": "game-menu-remove.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
