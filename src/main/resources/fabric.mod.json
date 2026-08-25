@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"com.mmh1146.menuremove.client.GameMenuRemoveClient"
+		],
+		"modmenu": [
+			"com.mmh1146.menuremove.client.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [
