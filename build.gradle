@@ -26,7 +26,7 @@ dependencies {
 	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Mod Menu integration; compile-only so the mod works without Mod Menu installed.
-	compileOnly "com.terraformersmc:modmenu:20.0.1"
+	compileOnly "com.terraformersmc:modmenu:18.0.0"
 }
 
 processResources {
